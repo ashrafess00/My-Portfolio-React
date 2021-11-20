@@ -1,3 +1,4 @@
+import spaceTourism from "../images/portfolio/spaceTourism.jpg";
 import SimpleBooking from "../images/portfolio/simpleBooking.jpg";
 import toDoApp from "../images/portfolio/to-do-app.jpg";
 import mdConverter from "../images/portfolio/md-converter.JPG";
@@ -5,8 +6,16 @@ import drumReact from "../images/portfolio/drumReact.png";
 import randomQuotes from "../images/portfolio/randomQuotes.png";
 import reactCalc from "../images/portfolio/calcReact.png";
 import jsDoc from "../images/portfolio/jsDoc.png";
+import faqAcordion from "../images/portfolio/faqAcordion.jpg";
+import blogr from "../images/portfolio/blogr.jpg";
 
 export const projects = [
+  {
+    id: "Space Tourism",
+    image: spaceTourism,
+    info: `a big thank to frontend mentor, scimba and kevin powell for providing this project with figma sketch free, it's a multi-page space tourism , built with react`,
+    link: "https://space-tourism-ash.netlify.app/",
+  },
   {
     id: "SimpleBooking",
     image: SimpleBooking,
@@ -48,5 +57,17 @@ export const projects = [
     image: jsDoc,
     info: `learn more about javascript from this js documentation`,
     link: "https://codepen.io/ashraf-essaoudi/full/XWgQBgM",
+  },
+  {
+    id: "faq acordion",
+    image: faqAcordion,
+    info: `a "frontend mentor" acordion faq challengue, built with scss `,
+    link: "https://ashrafess00.github.io/faq-accordion-card/",
+  },
+  {
+    id: "blogr landing page",
+    image: blogr,
+    info: `a "frontend mentor" challenge , built quickly with bootsrap`,
+    link: "https://ashrafess00.github.io/blogr-landing-page-main/",
   },
 ];
