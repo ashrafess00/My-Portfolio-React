@@ -86,6 +86,8 @@
     background-color: initial;
     z-index: initial;
     padding: initial;
+    visibility: visible;
+    transition: initial;
     & a {
       color: white;
     }
@@ -101,6 +103,8 @@
 
     &.display {
       display: flex;
+      visibility: visible;
+      margin-top: initial;
     }
   }
 

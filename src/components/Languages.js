@@ -2,28 +2,16 @@ import React, { useEffect, useRef } from "react";
 
 const Languages = () => {
   useEffect(() => {
-    window.addEventListener("scroll", () => {});
-
     window.addEventListener("scroll", () => {
-      console.log("hi");
       if (document.querySelector(".langsContainer")) {
         if (
           window.scrollY >=
           document.querySelector(".langsContainer").offsetTop - 300
         ) {
-          document.documentElement.style.setProperty(
-            "--arabicAnim",
-            "arabic 1s forwards"
-          );
-          document.documentElement.style.setProperty(
-            "--englishAnim",
-            "english 1s forwards"
-          );
-          document.documentElement.style.setProperty(
-            "--frenchAnim",
-            "french 1s forwards"
-          );
-          console.log("hello");
+          let n = document.querySelectorAll(".langCon");
+          n.forEach((e) => {
+            e.firstElementChild.style.width = e.firstElementChild.dataset.width;
+          });
         }
       }
     });
@@ -32,13 +20,21 @@ const Languages = () => {
     <section id="languages">
       <h2>languages</h2>
 
-      <div className="langsContainer">
+      <div className="langsContainer flex">
         <h3>Arabic</h3>
-        <div className="langCon arabic"></div>
+        <div className="langCon">
+          <div data-width="100%"></div>
+        </div>
+
         <h3>English</h3>
-        <div className="langCon english"></div>
+        <div className="langCon">
+          <div data-width="80%"></div>
+        </div>
+
         <h3>French</h3>
-        <div className="langCon french"></div>
+        <div className="langCon">
+          <div data-width="7%"></div>
+        </div>
       </div>
     </section>
   );
