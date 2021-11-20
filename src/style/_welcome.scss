@@ -1,0 +1,35 @@
+section.welcome {
+  position: relative;
+  height: 100vh;
+  // width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 1rem;
+  &::before {
+    content: "";
+    background: url("../images/bgPhone.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    z-index: -1;
+  }
+  h1 {
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+  }
+  p {
+    color: white;
+    opacity: 0.5;
+  }
+  img {
+    margin-top: 8rem;
+  }
+}

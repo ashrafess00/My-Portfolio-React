@@ -1,0 +1,35 @@
+footer {
+  margin-top: 2rem;
+}
+.footerBorder {
+  height: 5px;
+  width: 100%;
+  background-color: $red;
+  margin-bottom: 2rem;
+}
+
+.footerLogo {
+  width: 10rem;
+  margin: auto;
+  display: block;
+}
+
+.footerIcons {
+  width: 80%;
+  margin: 2rem auto;
+  a svg {
+    font-size: 2rem;
+    color: white;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.copyright {
+  font-size: 0.6rem;
+}
+.number {
+  font-size: 1rem;
+  color: white;
+}

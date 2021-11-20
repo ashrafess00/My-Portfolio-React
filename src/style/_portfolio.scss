@@ -1,0 +1,60 @@
+.portfolio {
+  padding: 2rem;
+  position: relative;
+  h4 {
+    font-size: 0.9rem;
+    opacity: 0.75;
+  }
+}
+.portfolioGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  img {
+    height: auto;
+  }
+}
+
+.portfolioContainer {
+  position: relative;
+}
+.Projectinfo {
+  display: none;
+  border-image: linear-gradient(45deg, rgb(241, 237, 237), rgb(25, 0, 255)) 1;
+  border-width: 1px;
+  border-style: solid;
+  // height: 80%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: $info_bg;
+  width: 100%;
+  text-align: justify;
+  padding: 0.6rem;
+  transition: 1s;
+  font-size: 0.8em;
+  &.show {
+    display: block;
+  }
+}
+
+.seeMore {
+  margin: 1rem auto;
+  align-self: center;
+  color: white;
+  display: block;
+  & a {
+    color: white;
+  }
+}
+
+.fa-info-circle {
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.infoBtn a {
+  color: white;
+}
