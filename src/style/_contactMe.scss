@@ -11,6 +11,12 @@
       outline: $red;
     }
   }
+  div {
+    flex-direction: column;
+    > button {
+      margin-bottom: 1rem;
+    }
+  }
   textarea {
     @extend input;
   }

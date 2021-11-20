@@ -28,6 +28,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  // contact me
+  .contactForm {
+    div {
+      flex-direction: row;
+      > button {
+        margin-bottom: initial;
+        width: auto;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 900px) {

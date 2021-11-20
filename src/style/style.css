@@ -563,6 +563,17 @@ h2::after {
   outline: red;
 }
 
+.contactForm div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactForm div > button {
+  margin-bottom: 1rem;
+}
+
 .contact p {
   margin: auto;
 }
@@ -628,6 +639,16 @@ footer {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .contactForm div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contactForm div > button {
+    margin-bottom: initial;
+    width: auto;
   }
 }
 
