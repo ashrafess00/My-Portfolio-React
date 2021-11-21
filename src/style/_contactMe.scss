@@ -1,6 +1,18 @@
 .contactForm {
   width: 80%;
   margin: auto;
+  position: relative;
+  & > div:first-child {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 1rem);
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: $radius;
+    h4 {
+      color: black;
+      margin-top: 10rem;
+    }
+  }
   input {
     padding: 1rem;
     border-radius: $radius;
