@@ -6,7 +6,7 @@ const Cv = () => {
     <iframe
       src={cv}
       type="application/pdf"
-      style={{ height: "100vh", width: "50%", margin: "auto" }}
+      style={{ height: "100vh", width: "100%", margin: "auto" }}
     />
   );
 };
