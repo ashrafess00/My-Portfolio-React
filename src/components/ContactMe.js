@@ -16,10 +16,8 @@ const ContactMe = () => {
       </h2>
       <form
         className="contactForm"
-        name="contact"
+        action="https://formsubmit.co/achrafess1937@gmail.com"
         method="POST"
-        data-netlify="true"
-        netlify
       >
         <input type="text" placeholder="your name" name="name" id="name" />
         <input type="email" placeholder="your email" name="email" id="email" />
