@@ -499,6 +499,20 @@ h2::after {
 .contactForm {
   width: 80%;
   margin: auto;
+  position: relative;
+}
+
+.contactForm > div:first-child {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 1rem);
+  background-color: rgba(255, 255, 255, 0.322);
+  border-radius: 10px;
+}
+
+.contactForm > div:first-child h4 {
+  color: black;
+  margin-top: 10rem;
 }
 
 .contactForm input, .contactForm textarea {
@@ -551,7 +565,7 @@ footer {
 }
 
 .footerIcons a svg {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 

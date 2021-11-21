@@ -1,6 +1,6 @@
 import "./style/style.css";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { BrowserRouter, Switch, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { useEffect } from "react";
 import Aos from "aos";

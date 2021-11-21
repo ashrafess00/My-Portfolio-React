@@ -5,6 +5,7 @@ const ContactMe = () => {
   const [clientEmail, setClientEmail] = useState("");
   const [clientMssg, setClientMssg] = useState("");
   const [mssgSent, setMessageSent] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const sendToWhatsapp = (event) => {
     event.preventDefault();
@@ -15,6 +16,7 @@ const ContactMe = () => {
   };
   function sendMe(e) {
     e.preventDefault();
+    setSending(true);
     fetch("https://formsubmit.co/ajax/achrafess1937@gmail.com", {
       method: "POST",
       headers: {
@@ -31,7 +33,7 @@ const ContactMe = () => {
       .then((data) => {
         if (data.success) {
           setMessageSent(true);
-
+          setSending(false);
           setTimeout(() => {
             setMessageSent(false);
           }, 3000);
@@ -45,6 +47,11 @@ const ContactMe = () => {
         Contact <span>Me</span>
       </h2>
       <form className={`contactForm `}>
+        {sending && (
+          <div>
+            <h4 className="flex jc-c al-i">sending your email ...</h4>
+          </div>
+        )}
         <input
           type="text"
           placeholder="your name"
