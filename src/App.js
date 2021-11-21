@@ -11,6 +11,7 @@ import PortfolioTwo from "./components/pages/PortfolioTwo";
 import Certifications from "./components/pages/Certifications";
 import Footer from "./components/Footer";
 import Cv from "./components/pages/Cv";
+import ThankYou from "./components/pages/ThankYou";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -28,6 +29,7 @@ function App() {
         <Route path="/portfolio" element={<PortfolioTwo />} />
         <Route path="/certifications" element={<Certifications />} />
         <Route path="/cv" element={<Cv />} />
+        <Route path="/thanks" element={<ThankYou />} />
       </Routes>
       <Footer />
     </BrowserRouter>
