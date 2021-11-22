@@ -24,7 +24,6 @@ const Portfolio = () => {
               key={project.id}
               className="portfolioContainer"
               data-aos={project.aosAction}
-              // onClick={(e) => me(e)}
             >
               <div className="Projectinfo">
                 <p>{project.info}</p>
