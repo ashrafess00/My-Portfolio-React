@@ -11,19 +11,21 @@
   grid-template-columns: 1fr;
   gap: 2rem;
   img {
-    height: auto;
+    height: 100%;
   }
 }
 
 .portfolioContainer {
   position: relative;
+  &:hover {
+    transform: translateY(1rem);
+  }
 }
 .Projectinfo {
   display: none;
-  border-image: linear-gradient(45deg, rgb(241, 237, 237), rgb(25, 0, 255)) 1;
-  border-width: 1px;
+  border-image: linear-gradient(136deg, rgb(255, 0, 0), rgba(255, 0, 0, 0)) 1;
+  border-width: 3px;
   border-style: solid;
-  // height: 80%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -34,6 +36,7 @@
   padding: 0.6rem;
   transition: 1s;
   font-size: 0.8em;
+
   &.show {
     display: block;
   }

@@ -155,13 +155,15 @@
   }
   .Projectinfo {
     font-size: 1em;
-    border: solid 5px red;
+    // border: solid 5px red;
     bottom: 0;
     top: 0;
   }
 
   .portfolioGrid {
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+
     gap: 1rem;
   }
   .portfolio > h2 {
@@ -173,8 +175,9 @@
     cursor: pointer;
     position: relative;
     transition: 1s;
+
     &:hover {
-      transform: translateY(0.5rem);
+      transform: translateY(1rem);
     }
     &:hover .Projectinfo {
       transition: 2s;

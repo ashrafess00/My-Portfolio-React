@@ -316,24 +316,29 @@ h2::after {
 }
 
 .portfolioGrid img {
-  height: auto;
+  height: 100%;
 }
 
 .portfolioContainer {
   position: relative;
 }
 
+.portfolioContainer:hover {
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+}
+
 .Projectinfo {
   display: none;
-  -o-border-image: linear-gradient(45deg, #f1eded, #1900ff) 1;
-     border-image: linear-gradient(45deg, #f1eded, #1900ff) 1;
-  border-width: 1px;
+  -o-border-image: linear-gradient(136deg, red, rgba(255, 0, 0, 0)) 1;
+     border-image: linear-gradient(136deg, red, rgba(255, 0, 0, 0)) 1;
+  border-width: 3px;
   border-style: solid;
   position: absolute;
   top: 0;
   bottom: 0;
   cursor: pointer;
-  background-color: #000000e3;
+  background-color: #000000ca;
   width: 100%;
   text-align: justify;
   padding: 0.6rem;
@@ -734,13 +739,13 @@ footer {
   }
   .Projectinfo {
     font-size: 1em;
-    border: solid 5px red;
     bottom: 0;
     top: 0;
   }
   .portfolioGrid {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
     gap: 1rem;
   }
   .portfolio > h2 {
@@ -754,8 +759,8 @@ footer {
     transition: 1s;
   }
   .portfolioContainer:hover {
-    -webkit-transform: translateY(0.5rem);
-            transform: translateY(0.5rem);
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   .portfolioContainer:hover .Projectinfo {
     -webkit-transition: 2s;
