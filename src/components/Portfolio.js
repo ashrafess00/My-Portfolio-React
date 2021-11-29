@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { projects } from "../Objects/PortfolioOne";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const Portfolio = () => {
       <h2 data-aos="fade-left">
         Port<span>folio</span>
       </h2>
+
       <div className="portfolioGrid">
         {projects.map((project) => {
           return (
@@ -38,6 +40,9 @@ const Portfolio = () => {
           );
         })}
       </div>
+      <button className="btn seeMore">
+        <Link to="portfolio">see more</Link>
+      </button>
     </section>
   );
 };
