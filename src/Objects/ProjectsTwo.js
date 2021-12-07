@@ -8,8 +8,15 @@ import reactCalc from "../images/portfolio/calcReact.png";
 import jsDoc from "../images/portfolio/jsDoc.png";
 import faqAcordion from "../images/portfolio/faqAcordion.jpg";
 import blogr from "../images/portfolio/blogr.jpg";
+import ecommercePage from "../images/portfolio/ecommercePage.jpg";
 
 export const projects = [
+  {
+    id: "ecommerce",
+    image: ecommercePage,
+    info: `frontend mentor challenge made with reactjs , i used sass and redux`,
+    link: "https://ecommerce-page-nf.netlify.app/",
+  },
   {
     id: "Space Tourism",
     image: spaceTourism,
