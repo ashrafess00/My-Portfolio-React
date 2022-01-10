@@ -15,6 +15,7 @@ body {
   background-color: $dark-blue;
   color: #ffffff;
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 img {

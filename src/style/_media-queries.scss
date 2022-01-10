@@ -176,9 +176,6 @@
     position: relative;
     transition: 1s;
 
-    &:hover {
-      transform: translateY(1rem);
-    }
     &:hover .Projectinfo {
       transition: 2s;
       display: block;
