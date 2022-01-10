@@ -24,17 +24,18 @@ export const projects = [
     link: "https://space-tourism-ash.netlify.app/",
   },
   {
+    id: "to do app",
+    image: toDoApp,
+    info: `to do app,"frontEnd mentor challenge, built with html,scss and native js`,
+    link: "https://todoappess.netlify.app/",
+  },
+  {
     id: "SimpleBooking",
     image: SimpleBooking,
     info: `a simple page created only with html and scss, (the phone illustaration built with code , it's not an image)`,
     link: "https://ashrafess00.github.io/chat-app-design/",
   },
-  {
-    id: "to do app",
-    image: toDoApp,
-    info: `to do app,"frontEnd mentor challenge, built with html,scss and native js`,
-    link: "https://ashrafess00.github.io/to-do-app/",
-  },
+
   {
     id: "markdown converter",
     image: mdConverter,
