@@ -25,7 +25,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faEnvelopeSquare} />
           </a>
           <a href="https://wa.me/212699229443" className="flex jc-c">
-            <FontAwesomeIcon icon={faMobileAlt} />
+            {/* <FontAwesomeIcon icon={faMobileAlt} /> */}
             <div className="number">+212699229443</div>
           </a>
         </div>

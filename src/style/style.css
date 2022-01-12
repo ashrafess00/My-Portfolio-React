@@ -8,6 +8,7 @@
 
 html {
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -16,7 +17,6 @@ body {
   background-color: #2c3e50;
   color: #ffffff;
   overflow-x: hidden;
-  -webkit-tap-highlight-color: transparent;
 }
 
 img {
@@ -579,7 +579,7 @@ footer {
 }
 
 .number {
-  font-size: 1rem;
+  font-size: 1.2em;
   color: white;
 }
 
