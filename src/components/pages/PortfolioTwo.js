@@ -29,7 +29,12 @@ const PortfolioTwo = () => {
                     </a>
                   </button>
                 </div>
-                <img src={project.image} alt={project.id} />
+                <img
+                  src={project.image}
+                  alt={project.id}
+                  width="311"
+                  heigth="250"
+                />
               </div>
             );
           })}

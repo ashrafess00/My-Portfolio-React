@@ -9,7 +9,7 @@ import jsDoc from "../images/portfolio/jsDoc.png";
 import faqAcordion from "../images/portfolio/faqAcordion.jpg";
 import blogr from "../images/portfolio/blogr.jpg";
 import ecommercePage from "../images/portfolio/ecommercePage.jpg";
-
+import loopStudio from "../images/portfolio/loopStudio.jpg";
 export const projects = [
   {
     id: "ecommerce",
@@ -29,6 +29,14 @@ export const projects = [
     info: `to do app,"frontEnd mentor challenge, built with html,scss and native js`,
     link: "https://todoappess.netlify.app/",
   },
+  /////////////////////////
+  {
+    id: "loopStudio",
+    image: loopStudio,
+    info: `a simple loopstudio landing,"frontEnd mentor challenge, built with html,scss and js`,
+    link: "https://ashrafess00.github.io/loopstudios-landing-page-main/",
+  },
+  ///////////////////////////
   {
     id: "SimpleBooking",
     image: SimpleBooking,
