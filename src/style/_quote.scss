@@ -1,0 +1,55 @@
+$fontSize: 3rem;
+div.quoteCon {
+  margin: auto;
+  width: 60%;
+  margin-top: 4rem;
+  svg {
+    font-size: $fontSize;
+    margin-right: 0.5rem;
+  }
+  q {
+    margin: auto;
+    font-size: $fontSize - 1;
+
+    &::after,
+    &::before {
+      content: initial;
+    }
+  }
+  p {
+    text-align: end;
+    color: $main-color;
+  }
+}
+
+div.loading {
+  text-align: center;
+  div {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  span {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #ff0000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+    animation: loading infinite ease-in-out 1s alternate;
+    @for $i from 3 through 4 {
+      &:nth-child(#{$i}) {
+        animation-delay: #{$i}s;
+        // background-color: green;
+      }
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -12,6 +12,7 @@ import Certifications from "./components/pages/Certifications";
 import Footer from "./components/Footer";
 import Cv from "./components/pages/Cv";
 import ThankYou from "./components/pages/ThankYou";
+import TodaysQuote from "./components/pages/TodaysQuote";
 function App() {
   useEffect(() => {
     Aos.init({
@@ -30,6 +31,7 @@ function App() {
         <Route path="/certifications" element={<Certifications />} />
         <Route path="/cv" element={<Cv />} />
         <Route path="/thanks" element={<ThankYou />} />
+        <Route path="/todayquote" element={<TodaysQuote />} />
       </Routes>
       <Footer />
     </BrowserRouter>
