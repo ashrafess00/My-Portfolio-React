@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -32,40 +31,24 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 a:visited {
   color: initial;
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .flex.cl {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .flex.jc-sb {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .flex.jc-c {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .flex.al-i {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 h2 {
@@ -93,9 +76,7 @@ a {
   display: block;
   position: relative;
 }
-
 .menu a::after {
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   content: "";
   position: absolute;
@@ -107,7 +88,6 @@ a {
   right: -50%;
   margin: auto;
 }
-
 .menu a:hover::after {
   width: 100%;
 }
@@ -125,11 +105,9 @@ a {
 .certifications {
   padding: 4rem;
 }
-
 .certifications div {
   margin-bottom: 2rem;
 }
-
 .certifications a {
   color: white;
 }
@@ -139,17 +117,13 @@ a {
     padding: 7rem;
   }
 }
-
 header {
   padding: 1rem;
   position: relative;
   background-color: #2c3e50;
-  -webkit-box-shadow: 0 5px 11px 1px #ff000052;
-          box-shadow: 0 5px 11px 1px #ff000052;
+  box-shadow: 0 5px 11px 1px #ff000052;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 nav {
@@ -158,57 +132,40 @@ nav {
 
 .menu {
   position: absolute;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   width: 90%;
   border: solid red 1px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border-radius: 10px;
   background-color: #2c3e50;
   z-index: 1000;
   padding: 1rem;
-  -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
   margin-top: 11rem;
   visibility: visible;
 }
-
 .menu a {
   color: white;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .menu a:hover {
   color: red;
 }
-
 .menu li:not(:last-child) {
   margin-bottom: 1.5rem;
 }
-
 .menu li:last-child {
   padding: 0.5rem 1rem;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .menu li:last-child a {
   color: white;
 }
-
 .menu.display {
   visibility: hidden;
   margin-top: -100%;
@@ -227,22 +184,12 @@ nav {
 section.welcome {
   position: relative;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 3rem 1rem;
 }
-
 section.welcome::before {
   content: "";
   background: url("../images/bgPhone.jpg");
@@ -255,25 +202,21 @@ section.welcome::before {
   opacity: 0.3;
   z-index: -1;
 }
-
 section.welcome h1 {
   font-size: 1.7rem;
   color: white;
   font-weight: 600;
   text-align: center;
 }
-
 section.welcome p {
   color: white;
   opacity: 0.5;
 }
-
 section.welcome img {
   margin-top: 8rem;
 }
 
 .succefullySent {
-  -webkit-transition: 1s;
   transition: 1s;
   outline: lime solid 2px !important;
 }
@@ -291,7 +234,6 @@ h2::before {
   color: white;
   margin-right: 1rem;
 }
-
 h2::after {
   content: "/>";
   color: red;
@@ -302,20 +244,16 @@ h2::after {
   padding: 2rem;
   position: relative;
 }
-
 .portfolio h4 {
   font-size: 0.9rem;
   opacity: 0.75;
 }
 
 .portfolioGrid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
-
 .portfolioGrid img {
   height: 100%;
 }
@@ -326,8 +264,7 @@ h2::after {
 
 .Projectinfo {
   display: none;
-  -o-border-image: linear-gradient(136deg, red, rgba(255, 0, 0, 0)) 1;
-     border-image: linear-gradient(136deg, red, rgba(255, 0, 0, 0)) 1;
+  border-image: linear-gradient(136deg, red, rgba(255, 0, 0, 0)) 1;
   border-width: 3px;
   border-style: solid;
   position: absolute;
@@ -338,24 +275,19 @@ h2::after {
   width: 100%;
   text-align: justify;
   padding: 0.6rem;
-  -webkit-transition: 1s;
   transition: 1s;
   font-size: 0.8em;
 }
-
 .Projectinfo.show {
   display: block;
 }
 
 .seeMore {
   margin: 1rem auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   color: white;
   display: block;
 }
-
 .seeMore a {
   color: white;
 }
@@ -377,12 +309,8 @@ h2::after {
   padding: 1rem;
   width: 90%;
   gap: 1rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .langsContainer h3 {
   font-size: 1rem;
 }
@@ -395,7 +323,6 @@ h2::after {
   border: solid 1px red;
   overflow: hidden;
 }
-
 .langCon > div {
   position: absolute;
   background-color: red;
@@ -403,15 +330,12 @@ h2::after {
   top: 0;
   bottom: 0;
   left: 0;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
 .skillsIconsContainer {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 }
 
@@ -422,79 +346,61 @@ h2::after {
 .skillsIcon-html {
   font-size: 4rem;
   color: #e54d26;
-  -webkit-transition: 1s;
   transition: 1s;
   cursor: pointer;
 }
-
 .skillsIcon-html:hover {
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  transform: translateY(15px);
 }
 
 .skillsIcon-css {
   font-size: 4rem;
   color: #0b73ba;
-  -webkit-transition: 1s;
   transition: 1s;
   cursor: pointer;
 }
-
 .skillsIcon-css:hover {
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  transform: translateY(15px);
 }
 
 .skillsIcon-scss {
   font-size: 4rem;
   color: #cf649a;
-  -webkit-transition: 1s;
   transition: 1s;
   cursor: pointer;
 }
-
 .skillsIcon-scss:hover {
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  transform: translateY(15px);
 }
 
 .skillsIcon-js {
   font-size: 4rem;
   color: #d9b82d;
-  -webkit-transition: 1s;
   transition: 1s;
   cursor: pointer;
 }
-
 .skillsIcon-js:hover {
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  transform: translateY(15px);
 }
 
 .skillsIcon-react {
   font-size: 4rem;
   color: #7de0ff;
-  -webkit-transition: 1s;
   transition: 1s;
   cursor: pointer;
 }
-
 .skillsIcon-react:hover {
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  transform: translateY(15px);
 }
 
 .skillsIcon-bootsrap {
   font-size: 4rem;
   color: #8512f3;
-  -webkit-transition: 1s;
   transition: 1s;
   cursor: pointer;
 }
-
 .skillsIcon-bootsrap:hover {
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  transform: translateY(15px);
 }
 
 .contactForm {
@@ -502,7 +408,6 @@ h2::after {
   margin: auto;
   position: relative;
 }
-
 .contactForm > div:first-child {
   position: absolute;
   width: 100%;
@@ -510,12 +415,10 @@ h2::after {
   background-color: rgba(255, 255, 255, 0.322);
   border-radius: 10px;
 }
-
 .contactForm > div:first-child h4 {
   color: black;
   margin-top: 10rem;
 }
-
 .contactForm input, .contactForm textarea {
   padding: 1rem;
   border-radius: 10px;
@@ -523,30 +426,21 @@ h2::after {
   margin-bottom: 1rem;
   width: 100%;
 }
-
 .contactForm input:focus, .contactForm textarea:focus {
   outline: red;
 }
-
 .contactForm div {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .contactForm div > button {
   margin-bottom: 1rem;
 }
-
 .contact p {
   margin: auto;
 }
 
 footer {
   margin-top: 2rem;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -567,12 +461,10 @@ footer {
   width: 80%;
   margin: 2rem auto;
 }
-
 .footerIcons a svg {
   font-size: 1.5rem;
   color: white;
 }
-
 .footerIcons a svg:hover {
   color: red;
 }
@@ -591,21 +483,17 @@ div.quoteCon {
   width: 60%;
   margin-top: 4rem;
 }
-
 div.quoteCon svg {
   font-size: 3rem;
   margin-right: 0.5rem;
 }
-
 div.quoteCon q {
   margin: auto;
   font-size: 2rem;
 }
-
 div.quoteCon q::after, div.quoteCon q::before {
   content: initial;
 }
-
 div.quoteCon p {
   text-align: end;
   color: #ff0000;
@@ -614,12 +502,10 @@ div.quoteCon p {
 div.loading {
   text-align: center;
 }
-
 div.loading div {
   display: inline-block;
   margin-right: 1rem;
 }
-
 div.loading span {
   width: 0.5rem;
   height: 0.5rem;
@@ -627,27 +513,13 @@ div.loading span {
   border-radius: 50%;
   display: inline-block;
   margin-right: 0.5rem;
-  -webkit-animation: loading infinite ease-in-out 1s alternate;
-          animation: loading infinite ease-in-out 1s alternate;
+  animation: loading infinite ease-in-out 1s alternate;
 }
-
 div.loading span:nth-child(3) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
 }
-
 div.loading span:nth-child(4) {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-
-@-webkit-keyframes loading {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation-delay: 4s;
 }
 
 @keyframes loading {
@@ -658,96 +530,88 @@ div.loading span:nth-child(4) {
     opacity: 1;
   }
 }
-
 @media screen and (min-width: 600px) {
   header nav ul.menu.flex {
     width: 60%;
   }
+
   section.welcome h1 {
     font-size: 3rem;
   }
+
   .portfolioGrid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+
   .Projectinfo {
     overflow-y: auto;
     font-size: 0.6em;
   }
+
   .skillsIconsContainer {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+
   .contactForm > div:first-child {
     width: 100%;
     height: 100%;
   }
   .contactForm div {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .contactForm div > button {
     margin-bottom: initial;
     width: auto;
   }
 }
-
 @media screen and (min-width: 900px) {
   .btn {
     padding: 0.5rem 1rem;
     background-color: transparent;
     border: red solid 1px;
-    -webkit-transition: 1s;
     transition: 1s;
     cursor: pointer;
   }
   .btn:hover {
     background-color: red;
   }
+
   .logo1 {
     margin-left: initial;
   }
+
   #humIcon {
     display: none;
   }
+
   header nav ul.menu.flex {
     width: initial;
   }
+
   nav {
     width: 35rem;
     height: auto;
   }
+
   .menu {
     position: initial;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     width: initial;
     border: initial;
     position: initial;
     margin-top: initial;
     top: initial;
     left: initial;
-    -webkit-transform: initial;
-            transform: initial;
+    transform: initial;
     border-radius: initial;
     background-color: initial;
     z-index: initial;
     padding: initial;
     visibility: visible;
-    -webkit-transition: initial;
     transition: initial;
   }
   .menu a {
@@ -757,19 +621,17 @@ div.loading span:nth-child(4) {
     margin-bottom: initial;
   }
   .menu li:last-child {
-    -ms-grid-column-align: center;
-        justify-self: center;
+    justify-self: center;
   }
   .menu li:last-child a {
     color: white;
   }
   .menu.display {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     visibility: visible;
     margin-top: initial;
   }
+
   section.welcome {
     padding: 3rem;
   }
@@ -781,17 +643,11 @@ div.loading span:nth-child(4) {
     font-size: 5rem;
     margin-bottom: 2rem;
   }
+
   .responsive.flex.cl.al-i {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 3rem;
     margin-bottom: 5rem;
   }
@@ -800,96 +656,103 @@ div.loading span:nth-child(4) {
     font-size: 4rem;
     line-height: 6rem;
   }
+
   span {
     color: red;
   }
+
   .resImg {
     width: 40%;
   }
+
   .portfolio h4 {
     display: none;
   }
+
   .Projectinfo {
     font-size: 1em;
     bottom: 0;
     top: 0;
   }
+
   .portfolioGrid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     gap: 1rem;
   }
+
   .portfolio > h2 {
     margin: 0 auto;
     font-size: 3rem;
   }
+
   .portfolioContainer {
     cursor: pointer;
     position: relative;
-    -webkit-transition: 1s;
     transition: 1s;
   }
   .portfolioContainer:hover .Projectinfo {
-    -webkit-transition: 2s;
     transition: 2s;
     display: block;
   }
+
   .langsContainer {
     width: 40%;
   }
+
   .skillsIconsContainer.flex.cl.jc-c {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 3rem;
   }
+
   .fas.fa-info-circle {
     border: solid 1px red;
     display: none;
   }
+
   .skillsIcon-html {
     margin-top: 0rem;
   }
+
   .skillsIcon-css {
     margin-top: 2rem;
   }
+
   .skillsIcon-scss {
     margin-top: 4rem;
   }
+
   .skillsIcon-js {
     margin-top: 6rem;
   }
+
   .skillsIcon-react {
     margin-top: 8rem;
   }
+
   .skillsIcon-bootsrap {
     margin-top: 10rem;
   }
+
   .contactForm {
     width: 50%;
   }
-  .contactForm input[type="text"], .contactForm textarea[type="text"] {
+  .contactForm input[type=text] {
     display: inline-block;
     width: 48%;
   }
-  .contactForm input[type="email"], .contactForm textarea[type="email"] {
+  .contactForm input[type=email] {
     display: inline-block;
     width: 48%;
     margin-left: 3%;
   }
+
   footer div:nth-child(2) {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
+
   .footerIcons {
     width: 30rem;
     margin: 2rem auto;
@@ -902,7 +765,6 @@ div.loading span:nth-child(4) {
     color: red;
   }
 }
-
 @media print {
   body {
     background-color: black;
@@ -911,4 +773,5 @@ div.loading span:nth-child(4) {
     color: black;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
