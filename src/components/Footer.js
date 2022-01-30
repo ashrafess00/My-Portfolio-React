@@ -1,9 +1,5 @@
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import {
-  faEnvelopeSquare,
-  faMobile,
-  faMobileAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import myLogo from "../images/myLogo.svg";
@@ -25,7 +21,6 @@ const Footer = () => {
             <FontAwesomeIcon icon={faEnvelopeSquare} />
           </a>
           <a href="https://wa.me/212699229443" className="flex jc-c">
-            {/* <FontAwesomeIcon icon={faMobileAlt} /> */}
             <div className="number">+212699229443</div>
           </a>
         </div>

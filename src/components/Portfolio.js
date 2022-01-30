@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { projects } from "../Objects/PortfolioOne";
 import { Link } from "react-router-dom";
 
@@ -26,11 +26,13 @@ const Portfolio = () => {
               key={project.id}
               className="portfolioContainer"
               data-aos={project.aosAction}
+              // eslint-disable-next-line react/jsx-no-duplicate-props
+              key={Date.now() + Math.random()}
             >
               <div className="Projectinfo">
                 <p>{project.info}</p>
                 <button className="btn infoBtn">
-                  <a href={project.link} target="_blank">
+                  <a href={project.link} target="_blank" rel="noreferrer">
                     see the website
                   </a>
                 </button>

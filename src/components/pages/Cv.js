@@ -7,6 +7,7 @@ const Cv = () => {
       src={cv}
       type="application/pdf"
       style={{ height: "100vh", width: "100%", margin: "auto" }}
+      title="my cv"
     />
   );
 };

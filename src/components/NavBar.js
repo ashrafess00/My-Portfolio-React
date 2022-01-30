@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import logo from "../images/myLogo.svg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -42,6 +42,9 @@ const NavBar = () => {
           </li>
           <li>
             <Link to="/cv">Download My Cv</Link>
+          </li>
+          <li>
+            <Link to="/todayquote">quote of today</Link>
           </li>
           <li className="btn" onClick={() => scrollToContact()}>
             Contact Me

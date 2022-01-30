@@ -11,9 +11,9 @@ const ContactMe = () => {
     event.preventDefault();
     window.open("https://wa.me/212699229443?text=" + clientMssg);
   };
-  const write = (e) => {
-    setClientMssg(e.target.value);
-  };
+  // const write = (e) => {
+  //   setClientMssg(e.target.value);
+  // };
   function sendMe(e) {
     e.preventDefault();
     setSending(true);
@@ -71,7 +71,6 @@ const ContactMe = () => {
         <textarea
           id="mssg"
           name="message"
-          id="mssg"
           cols="30"
           rows="10"
           placeholder="your message"

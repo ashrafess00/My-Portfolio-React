@@ -545,6 +545,9 @@ h2::after {
 
 footer {
   margin-top: 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .footerBorder {
@@ -581,6 +584,79 @@ footer {
 .number {
   font-size: 1.2em;
   color: white;
+}
+
+div.quoteCon {
+  margin: auto;
+  width: 60%;
+  margin-top: 4rem;
+}
+
+div.quoteCon svg {
+  font-size: 3rem;
+  margin-right: 0.5rem;
+}
+
+div.quoteCon q {
+  margin: auto;
+  font-size: 2rem;
+}
+
+div.quoteCon q::after, div.quoteCon q::before {
+  content: initial;
+}
+
+div.quoteCon p {
+  text-align: end;
+  color: #ff0000;
+}
+
+div.loading {
+  text-align: center;
+}
+
+div.loading div {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+div.loading span {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #ff0000;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+  -webkit-animation: loading infinite ease-in-out 1s alternate;
+          animation: loading infinite ease-in-out 1s alternate;
+}
+
+div.loading span:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+div.loading span:nth-child(4) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 600px) {
