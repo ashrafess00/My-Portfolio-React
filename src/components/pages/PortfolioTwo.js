@@ -20,11 +20,14 @@ const PortfolioTwo = () => {
         <div className="portfolioGrid">
           {projects.map((project) => {
             return (
-              <div className="portfolioContainer">
+              <div
+                className="portfolioContainer"
+                key={Date.now() + Math.random()}
+              >
                 <div className="Projectinfo display">
                   <p>{project.info}</p>
                   <button className="btn infoBtn">
-                    <a href={project.link} target="_blank">
+                    <a href={project.link} target="_blank" rel="noreferrer">
                       see the website
                     </a>
                   </button>
